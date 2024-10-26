@@ -1,0 +1,10 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "conversation_id": "1877",
+    "session_id": "1844672311931760640",
+    "title": "园区减排方案",
+    "message_details": []
+  }
+}

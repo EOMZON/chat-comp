@@ -1,0 +1,140 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "conversation_id": "2111",
+    "session_id": "1845022150593413120",
+    "title": "分布式光伏的发电上网模式有哪些",
+    "message_details": [
+      {
+        "message_id": "33486",
+        "message_type": 0,
+        "message_type_label": "问题",
+        "message_type_label_option": "question",
+        "contents": [
+          {
+            "content": "分布式光伏的发电上网模式有哪些",
+            "content_type": "text"
+          }
+        ],
+        "expert_agents": []
+      },
+      {
+        "message_id": "33487",
+        "message_type": 1,
+        "message_type_label": "回答",
+        "message_type_label_option": "answer",
+        "contents": [
+          {
+            "content": "分布式光伏的发电上网模式主要有以下三种：\n\n1. **全额上网**（Grid Feed-in）：分布式光伏系统产生的电力全部卖给电网，电网按照国家规定的电价进行收购。这种模式下，发电量超出用户自身消耗的部分，会被电网计价结算。\n\n2. **全部自发自用**（Net Metering）：分布式光伏系统产生的电力首先满足用户的自身用电需求，剩余电量不再上网，电网不参与。这种方式适用于用户对电力需求较大的情况，可能需要安装储能设备以存储多余的电力。\n\n3. **自发自用余电上网**（Net Metering with Export）：分布式光伏系统产生的电力首先供用户使用，如果有多余的电力，可以卖给电网。这种模式允许用户在满足自身用电后，将盈余电力转化为经济收益。\n\n对于自然人户用和非自然人户用分布式光伏，用户通常有更多选择；而一般工商业分布式光伏可能受限于政策，部分大型工商业项目可能要求全部自发自用，通过防逆流装置确保电力不反向流入电网。",
+            "content_type": "text",
+            "content_id": "1845007667212910592"
+          }
+        ],
+        "expert_agents": ["能碳知识专家智能体"]
+      },
+      {
+        "message_id": "33488",
+        "message_type": 0,
+        "message_type_label": "问题",
+        "message_type_label_option": "question",
+        "contents": [
+          {
+            "content": "上个季度江苏省各场站发电量排名",
+            "content_type": "text"
+          }
+        ],
+        "expert_agents": []
+      },
+      {
+        "message_id": "33489",
+        "message_type": 1,
+        "message_type_label": "回答",
+        "message_type_label_option": "answer",
+        "contents": [
+          {
+            "content": "下面列出了上个季度江苏省各场站的发电量排名情况",
+            "content_type": "text",
+            "content_id": "1845007850994728960"
+          },
+          {
+            "content": "{\"title\": {\"text\": \"\\u4e0a\\u4e2a\\u5b63\\u5ea6\\u6c5f\\u82cf\\u7701\\u5404\\u573a\\u7ad9\\u53d1\\u7535\\u91cf\\u6392\\u540d\\u8868\"}, \"dataset\": {\"source\": [[\"total_num\", \"total_num\"], [\"\\u82cf\\u5dde\\u6606\\u5c71\\u5343\\u9a6c\\u6587\\u5177\", \"82575.6\"], [\"\\u82cf\\u5dde\\u7269\\u6d41\\u4e2d\\u5fc3\", \"82488.0\"], [\"\\u82cf\\u5dde\\u6b27\\u6587\\u65af\\u79d1\\u5b81\", \"52218.3\"]]}, \"series\": [{\"type\": \"bar\"}]}",
+            "content_type": "chart",
+            "content_id": "1845007850994728961",
+            "exist_workbench": 1
+          }
+        ],
+        "analysis_process": "根据问题: 查询2024年7月到2024年9月江苏省各场站的发电量\n生成的查询语句为：SELECT station.short_name, SUM(sms.electricity_generation) AS electricity_generation FROM asset_station station JOIN stats_month_station sms ON station.station_id = sms.station_id WHERE station.station_type = '光伏' AND station.province = '江苏省' AND sms.year = 2024 AND sms.month BETWEEN 7 AND 9 GROUP BY station.station_id;\n查询结果为：\n| asset_station.short_name | electricity_generation |\n| --- | --- |\n| 苏州欧文斯科宁 | 52218.3 |\n| 苏州物流中心 | 82488.0 |\n| 苏州昆山千马文具 | 82575.6 |\n\n计算后得出的结果为：\n| asset_station.short_name | electricity_generation |\n| --- | --- |\n| 苏州昆山千马文具 | 82575.6 |\n| 苏州物流中心 | 82488.0 |\n| 苏州欧文斯科宁 | 52218.3 |\n\n",
+        "expert_agents": ["数据分析专家智能体"]
+      },
+      {
+        "message_id": "33490",
+        "message_type": 0,
+        "message_type_label": "问题",
+        "message_type_label_option": "question",
+        "contents": [
+          {
+            "content": "上个季度江苏省各场站发电量占比情况",
+            "content_type": "text"
+          }
+        ],
+        "expert_agents": []
+      },
+      {
+        "message_id": "33491",
+        "message_type": 1,
+        "message_type_label": "回答",
+        "message_type_label_option": "answer",
+        "contents": [
+          {
+            "content": "本表展示了上个季度江苏省各场站的发电量占比详细数据，帮助您了解各场站的贡献情况。",
+            "content_type": "text",
+            "content_id": "1845008027872722944"
+          },
+          {
+            "content": "{\"title\": {\"text\": \"\\u4e0a\\u4e2a\\u5b63\\u5ea6\\u6c5f\\u82cf\\u7701\\u5404\\u573a\\u7ad9\\u53d1\\u7535\\u91cf\\u5360\\u6bd4\\u60c5\\u51b5\\u8868\"}, \"dataset\": {\"source\": [[\"\\u53d1\\u7535\\u91cf\\u5360\\u6bd4\", \"\\u573a\\u7ad9\\u6c47\\u603b\\u4fe1\\u606f\"], [\"24.0\", \"\\u82cf\\u5dde\\u6b27\\u6587\\u65af\\u79d1\\u5b81\"], [\"38.0\", \"\\u82cf\\u5dde\\u7269\\u6d41\\u4e2d\\u5fc3\"], [\"38.0\", \"\\u82cf\\u5dde\\u6606\\u5c71\\u5343\\u9a6c\\u6587\\u5177\"]]}, \"series\": [{\"type\": \"pie\"}]}",
+            "content_type": "chart",
+            "content_id": "1845008027872722945",
+            "exist_workbench": 1
+          }
+        ],
+        "analysis_process": "根据问题: 2024年7月到2024年9月，江苏省各场站的发电量\n生成的查询语句为：SELECT station.short_name, SUM(sms.electricity_generation) AS electricity_generation FROM asset_station station JOIN stats_month_station sms ON station.station_id = sms.station_id WHERE station.station_type = '光伏' AND station.province = '江苏省' AND sms.year = 2024 AND sms.month BETWEEN 7 AND 9 GROUP BY station.station_id;\n查询结果为：\n| asset_station.short_name | electricity_generation |\n| --- | --- |\n| 苏州欧文斯科宁 | 52218.3 |\n| 苏州物流中心 | 82488.0 |\n| 苏州昆山千马文具 | 82575.6 |\n\n根据问题: 2024年7月到2024年9月，江苏省所有场站的总发电量\n生成的查询语句为：SELECT SUM(sms.electricity_generation) AS electricity_generation FROM asset_station station JOIN stats_month_station sms ON station.station_id = sms.station_id WHERE station.station_type = '光伏' AND station.province = '江苏省' AND sms.year = 2024 AND sms.month BETWEEN 7 AND 9;\n查询结果为：\n| electricity_generation |\n| --- |\n| 217281.9 |\n\n计算后得出的结果为：\n| asset_station.short_name | electricity_generation |\n| --- | --- |\n| 苏州欧文斯科宁 | 24.0 |\n| 苏州物流中心 | 38.0 |\n| 苏州昆山千马文具 | 38.0 |\n\n计算后得出的结果为：\n| asset_station.short_name | electricity_generation |\n| --- | --- |\n| 苏州欧文斯科宁 | 24.0% |\n| 苏州物流中心 | 38.0% |\n| 苏州昆山千马文具 | 38.0% |\n\n",
+        "expert_agents": ["数据分析专家智能体"]
+      },
+      {
+        "message_id": "33492",
+        "message_type": 0,
+        "message_type_label": "问题",
+        "message_type_label_option": "question",
+        "contents": [
+          {
+            "content": "最近一个月苏州欧文斯科宁场站发电量趋势",
+            "content_type": "text"
+          }
+        ],
+        "expert_agents": []
+      },
+      {
+        "message_id": "33493",
+        "message_type": 1,
+        "message_type_label": "回答",
+        "message_type_label_option": "answer",
+        "contents": [
+          {
+            "content": "下面的图表显示了最近一个月苏州欧文斯科宁场站的发电量变化趋势",
+            "content_type": "text",
+            "content_id": "1845008178628591616"
+          },
+          {
+            "content": "{\"title\": {\"text\": \"\\u6700\\u8fd1\\u4e00\\u4e2a\\u6708\\u82cf\\u5dde\\u6b27\\u6587\\u65af\\u79d1\\u5b81\\u573a\\u7ad9\\u53d1\\u7535\\u91cf\\u8d8b\\u52bf\\u56fe\\u8868\"}, \"dataset\": {\"source\": [[\"total_num\", \"total_num\"], [\"2024-09-13\", \"1073.4\"], [\"2024-09-14\", \"851.1\"], [\"2024-09-15\", \"868.1\"], [\"2024-09-16\", \"54.1\"], [\"2024-09-17\", \"973.8\"], [\"2024-09-18\", \"923.4\"], [\"2024-09-19\", \"603.9\"], [\"2024-09-20\", \"125.1\"], [\"2024-09-21\", \"185.6\"], [\"2024-09-22\", \"1008.6\"], [\"2024-09-23\", \"968.0\"], [\"2024-09-24\", \"395.6\"], [\"2024-09-25\", \"419.1\"], [\"2024-09-26\", \"481.1\"], [\"2024-09-27\", \"662.2\"], [\"2024-09-28\", \"903.6\"], [\"2024-09-29\", \"779.3\"], [\"2024-09-30\", \"721.9\"]]}, \"series\": [{\"type\": \"line\"}]}",
+            "content_type": "chart",
+            "content_id": "1845008178628591617",
+            "exist_workbench": 1
+          }
+        ],
+        "analysis_process": "根据问题: 查询2024年9月13日到2024年10月12日，苏州欧文斯科宁场站的发电量变化趋势\n生成的查询语句为：SELECT sds.stats_time AS time, SUM(sds.electricity_generation) AS electricity_generation FROM asset_station station JOIN stats_day_station sds ON station.station_id = sds.station_id WHERE station.station_type = '光伏' AND station.short_name = '苏州欧文斯科宁' AND sds.stats_time BETWEEN '2024-09-13' AND '2024-10-12' GROUP BY sds.stats_time ORDER BY sds.stats_time;\n查询结果为：\n| stats_day_station.time | electricity_generation |\n| --- | --- |\n| 2024-09-13 | 1073.4 |\n| 2024-09-14 | 851.1 |\n| 2024-09-15 | 868.1 |\n| 2024-09-16 | 54.1 |\n| 2024-09-17 | 973.8 |\n| 2024-09-18 | 923.4 |\n| 2024-09-19 | 603.9 |\n| 2024-09-20 | 125.1 |\n| 2024-09-21 | 185.6 |\n| 2024-09-22 | 1008.6 |\n| 2024-09-23 | 968.0 |\n| 2024-09-24 | 395.6 |\n| 2024-09-25 | 419.1 |\n| 2024-09-26 | 481.1 |\n| 2024-09-27 | 662.2 |\n| 2024-09-28 | 903.6 |\n| 2024-09-29 | 779.3 |\n| 2024-09-30 | 721.9 |\n\n",
+        "expert_agents": ["数据分析专家智能体"]
+      }
+    ]
+  }
+}

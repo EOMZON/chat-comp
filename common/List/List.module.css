@@ -1,0 +1,8 @@
+.myListContainer :global(.ant-checkbox > .ant-checkbox-inner) {
+  border-radius: 50%;
+}
+
+.customList :global(.ant-list-items > .ant-list-item) {
+  border-bottom: none;
+  padding: 6px 0;
+}

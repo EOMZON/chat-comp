@@ -1,0 +1,24 @@
+{
+  "code": 200,
+  "msg": "STOP_FLAG",
+  "data": {
+    "message_id": "28275",
+    "message_type": 1,
+    "message_type_label": "回答",
+    "message_type_label_option": "answer",
+    "contents": [
+      {
+        "content": "请输入想要生成的地址或经纬度",
+        "content_type": "text",
+        "content_id": "1833037978049507328"
+      },
+      {
+        "content": "{\"title\": {\"text\": \"\\u4e0a\\u4e2a\\u5b63\\u5ea6\\u6c5f\\u82cf\\u7701\\u5404\\u573a\\u7ad9\\u53d1\\u7535\\u91cf\\u6392\\u540d\\u8868\"}, \"dataset\": {\"source\": [[\"total_num\", \"total_num\"], [\"\\u82cf\\u5dde\\u6606\\u5c71\\u5343\\u9a6c\\u6587\\u5177\", \"82575.6\"], [\"\\u82cf\\u5dde\\u7269\\u6d41\\u4e2d\\u5fc3\", \"82488.0\"], [\"\\u82cf\\u5dde\\u6b27\\u6587\\u65af\\u79d1\\u5b81\", \"52218.3\"]]}, \"series\": [{\"type\": \"bar\"}]}",
+        "content_type": "chart",
+        "content_id": "1845007850994728961",
+        "exist_workbench": 1
+      }
+    ],
+    "expert_agents": ["文档撰写专家智能体"]
+  }
+}

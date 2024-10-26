@@ -1,0 +1,40 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "conversation_id": "1877",
+    "session_id": "1844672311931760640",
+    "title": "园区减排方案",
+    "message_details": [
+      {
+        "message_id": "33270",
+        "message_type": 0,
+        "message_type_label": "问题",
+        "message_type_label_option": "question",
+        "contents": [
+          {
+            "content": "查看成都中达电站上个月每周发电量情况",
+            "content_type": "text"
+          }
+        ],
+        "expert_agents": [],
+        "favorite_time": "1728612407000"
+      },
+      {
+        "message_id": "33271",
+        "message_type": 1,
+        "message_type_label": "回答",
+        "message_type_label_option": "answer",
+        "contents": [
+          {
+            "content": "抱歉，没有查询到成都中达电站上个月每周的发电量数据。",
+            "content_type": "text",
+            "content_id": "1844558451332153344"
+          }
+        ],
+        "analysis_process": "根据问题: 查询2024年9月每周，成都中达电站的发电量\n生成的查询语句为：SELECT T1.stats_time, SUM(T1.kwh) FROM stats_day_meter AS T1 JOIN tb_terminal AS T2 ON T1.terminal_id = T2.id JOIN tb_floor AS T3 ON T1.floor_id = T3.id JOIN tb_building AS T4 ON T3.building_id = T4.id WHERE T2.name = '成都中达电站' AND T1.stats_time >= '2024-09-01' AND T1.stats_time <= '2024-09-30' GROUP BY T1.stats_time\n查询结果为：\n\n\n",
+        "expert_agents": ["文档撰写专家智能体"]
+      }
+    ]
+  }
+}

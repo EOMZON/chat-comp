@@ -1,0 +1,18 @@
+{
+  "code": 200,
+  "msg": "STOP_FLAG",
+  "data": {
+    "message_id": "28275",
+    "message_type": 1,
+    "message_type_label": "回答",
+    "message_type_label_option": "answer",
+    "contents": [
+      {
+        "content": "请输入想要生成的地址或经纬度",
+        "content_type": "text",
+        "content_id": "1833037978049507328"
+      }
+    ],
+    "expert_agents": ["文档撰写专家智能体"]
+  }
+}
